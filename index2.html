@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Tracker</title>
+    <link rel="icon" href="./letter-e.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <div class="head">
+      <img src="./accounting.png" alt="" width="65px" height="65px" />
+      <h1>Expenses Tracker</h1>
+      <button onclick="window.print()" id="dl" >Print</button>
+    </div>
+    <div class="main">
+      <form action="">
+        <ul>
+          <li>
+            <label for="">Category:</label>
+            <select name="category" id="category-select" style="color: black">
+              Category
+              <option value="Medical">Medical</option>
+              <option value="Grocery">Grocery</option>
+              <option value="Traveling">Traveling</option>
+              <option value="HouseRent">HouseRent</option>
+              <option value="Bills">Bills</option>
+              <option value="EMI">EMI</option>
+              <option value="Others">Others</option>
+            </select>
+          </li>
+          <li>
+            <label for="">Amount:</label>
+            <input type="num" id="amount" placeholder="Enter the amount" />
+          </li>
+          <li><button id="btn">Add</button></li>
+        </ul>
+      </form>
+    </div>
+    <!-- first table -->
+    <div class="salary">
+      <table class="first">
+        <tr>
+          <th>INCOME</th>
+          <th>BALANCE</th>
+        </tr>
+        <tr>
+          <td class="income"></td>
+          <td id="balancee"></td>
+        </tr>
+      </table>
+    </div>
+    <!-- //second table -->
+
+    <div class="table">
+      <table class="second">
+        <tr>
+          <th id="category">Category</th>
+          <th id="expenses">Expense</th>
+          <th id="total">Total</th>
+          <th id="delete">Delete</th>
+        </tr>
+        <!-- <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> -->
+      </table>
+    </div>
+    <!-- highest expenses -->
+    <div class="final">
+      <h3 id="head">Highest expenses</h3>
+      <ul>
+        <li id="category2">Category:</li>
+        <li id="expenses2">Expenses:</li>
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
