@@ -87,24 +87,61 @@ top: 100px;
 span{
     color: red;
 }
-@media (max-width:428px){
+@media (max-width: 600px) {
     h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: "Overlock SC", sans-serif;
-    margin-top: 58px;
+        font-size: 35px;
+        margin-top: 40px;
+    }
+
+    img {
+        left: 30px;
+        top: 80px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .container {
+        width: 90%;
+        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #salary {
+        font-size: 16px;
+        padding: 6px 15px;
+        width: 80%;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .main {
+        margin-top: 50px;
+    }
+
+    .head {
+        margin-top: 60px;
+    }
+    .head img{
+        display: none;
+    }
 }
-img {
-    position: relative;
-    left: 20px;
-    top: 100px;
-    height: 40px;
-    width: 50px;
-}
-.container{
-    margin-right: 45px;
-}
-}
+
+
+
 </style>
 <body>
 <div class="head">
@@ -112,12 +149,11 @@ img {
     <h1>Expenses <span>T</span>racker</h1>
 </div>
     <div class="main">
-        <span><img src="" alt=""></span>
         <div class="container">
            <h2>SALARY</h2>
            <form action="">
            <label for="box" id="box">
-              <input type="num" placeholder="Enter your salary" id="salary">
+              <input type="number" placeholder="Enter your salary" id="salary">
            </label>
               <button class="submit">submit</button>
             </form>

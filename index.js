@@ -14,8 +14,6 @@ var maxCat="";
 document.forms[0].addEventListener("submit",(e)=>{
  e.preventDefault();
 
-   // console.log("category:",e.target[0].value)
-    //console.log("Amount:",e.target[1].value)
     var expenses=parseFloat(e.target[1].value)
     expenses.innerText="amount";
     

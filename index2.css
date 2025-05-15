@@ -201,94 +201,94 @@ color: white;
   top: 36px;
 }
 /* media qearies */
-@media (max-width:428px){
-  body h1 {
-    font-size:  35px;
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head img {
+    margin: 10px auto;
+    display: block;
+  }
+
+  .head h1 {
+    font-size: 30px;
+    padding: 10px 0;
     text-align: center;
-    position: relative;
-    left: 146px;
-}
-.table .second {
-  margin-left: -9px;
-  margin-top: 7px;
-}
+  }
+
+  .head button {
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+    position: static;
+  }
+
+  .main {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
   .main ul {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .main ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main ul li input,
+  .main ul li select {
+    width: 80%;
+    padding: 5px;
+    margin: 5px auto;
+  }
+
+  #btn {
+    position: static;
+    width: 60%;
+  }
+
+  .salary {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .table .second {
+    margin: 10px auto;
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .second th,
+  .second td {
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+
+  .final {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .final ul li {
     font-size: 20px;
-    flex-wrap: nowrap;
-}
-.head button{
-position: relative;
-left: 117px;
-top: 25px;
-}
-body {
-  background-image: url(./index2bg-1.avif);
-  background-repeat: no-repeat;
-  background-size:177% 256vh;
-}
-li input {
-  border-radius: 6px;
-  margin-left: 140px;
-}
-li select {
-  border-radius: 6px;
-  margin-left: 180px;
-}
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 700;
-  margin-left: 51px;
-}
-#btn {
-  position: relative;
-  right: 100px;
-  top: 33px;
-}
-.salary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18px;
-  margin-left: 264px;
-}
-table {
-  background-color: transparent;
-  margin-left: 0px;
-}
-.table {
-  display: flex;
-  margin-top: 44px;
-  margin-left: 1px;
-}
-.final {
-  margin-left: 200px;
-  width: 344px;
-  border-radius: 10px;
-  position: relative;
-  top: 15px;
-}
-.table .second {
-  margin-left: -5px;
-  margin-top: 50px;
-}
-.head img {
-  margin-top: 4px;
-  left: 242px;
-  position: relative;
-  left: 146px;
-}
-.head button {
-  position: relative;
-  left: 247px;
-  top: 25px;
-}
-form ul li label {
-  font-family: "Reem Kufi Fun", sans-serif;
-  margin-left: 187px;
-}
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }
