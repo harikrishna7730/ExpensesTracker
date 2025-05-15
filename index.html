@@ -160,17 +160,28 @@ span{
         </div>
     </div>
    <script>
-    
- document.forms[0].addEventListener("submit",(e)=>{
-  e.preventDefault()
-    var salary={
-        key: e.target[0].value
+
+document.forms[0].addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const salaryInput = e.target[0].value.trim();
+
+    if (salaryInput === "" || isNaN(salaryInput) || Number(salaryInput) <= 0) {
+        alert("Please enter a valid salary before submitting.");
+        return;
     }
-    window.localStorage.setItem("sal",JSON.stringify(salary))
-    window.location.assign("./index2.html")
-     console.log(salary)
-    e.target[0].value=""
- })
+
+    const salary = {
+        key: salaryInput
+    };
+
+    window.localStorage.setItem("sal", JSON.stringify(salary));
+    window.location.assign("./index2.html");
+
+    e.target[0].value = "";
+});
+</script>
+
    </script>
 </body>
 </html>
